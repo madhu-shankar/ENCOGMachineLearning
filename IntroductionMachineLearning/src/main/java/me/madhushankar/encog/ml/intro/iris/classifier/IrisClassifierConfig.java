@@ -7,14 +7,14 @@ import java.io.File;
  */
 public class IrisClassifierConfig {
 
-    private static final String BASE_DATA_FILE_NAME = "META-INF/IrisData.csv";
-    public static final String SHUFFLED_BASE_DATA_FILENAME = "META-INF/ShuffledIrisData.csv";
-    private static final String BASE_TRAINING_DATA_FILE = "META-INF/BaseTrainingData.csv";
-    private static final String BASE_TEST_DATA_FILE = "META-INF/BaseTestData.csv";
-    private static final String NORMALIZED_TRAINING_DATA_FILE = "META-INF/NormalizedTrainingData.csv";
-    private static final String NORMALIZED_TEST_DATA_FILE = "META-INF/NormalizedTestData.csv";
-    private static final String ANALYST_FILE = "META-INF/AnalystFile.ega";
-    private static final String IRIS_TRAINED_NETWORK_FILE = "META-INF/IrisTrainedNetwork.eg";
+    private static final String BASE_DATA_FILE_NAME = "META-INF/Iris/IrisData.csv";
+    private static final String SHUFFLED_BASE_DATA_FILENAME = "META-INF/Iris/ShuffledIrisData.csv";
+    private static final String BASE_TRAINING_DATA_FILE = "META-INF/Iris/BaseTrainingData.csv";
+    private static final String BASE_TEST_DATA_FILE = "META-INF/Iris/BaseTestData.csv";
+    private static final String NORMALIZED_TRAINING_DATA_FILE = "META-INF/Iris/NormalizedTrainingData.csv";
+    private static final String NORMALIZED_TEST_DATA_FILE = "META-INF/Iris/NormalizedTestData.csv";
+    private static final String ANALYST_FILE = "META-INF/Iris/AnalystFile.ega";
+    private static final String IRIS_TRAINED_NETWORK_FILE = "META-INF/Iris/IrisTrainedNetwork.eg";
 
     static File getBaseDataFile(ClassLoader classLoader) {
         return new File(classLoader.getResource(BASE_DATA_FILE_NAME).getFile());
